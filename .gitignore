@@ -1,4 +1,7 @@
 *.pyc
-bin
+pkg/
 .bundle
 Gemfile.lock
+vendor/
+.project
+.buildpath

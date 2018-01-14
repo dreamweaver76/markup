@@ -1,3 +1,89 @@
+## 1.6.2 - 2017-11-27
+
+### Changed
+
+* Only report basename in usage [#1131](https://github.com/github/markup/pull/1131)
+* rest2html parameter signature fix [#1082](https://github.com/github/markup/pull/1082)
+
+## 1.6.1 - 2017-07-25
+
+### Changed
+
+* Added support for highlight directive in rST [#925](https://github.com/github/markup/pull/925)
+* Fixes to documentation and code style [#1009](https://github.com/github/markup/pull/1009) [#1071](https://github.com/github/markup/pull/1071) [#1087](https://github.com/github/markup/pull/1087)
+* Test against newer Ruby versions [#1086](https://github.com/github/markup/pull/1086)
+* Upgrade to Asciidoctor 1.5.6.1 [#1088](https://github.com/github/markup/pull/1088)
+
+## 1.6.0 - 2017-04-03
+
+### Changed
+
+* Added filename argument to all renderers for additional context
+* Removed superfluous `rinku` dependency [#1035](https://github.com/github/markup/pull/1035)
+* Enable source-to-source navigation for `.adoc` AsciiDoc files, plus additional attributes passed through [#1039](https://github.com/github/markup/pull/1039) and [#1041](https://github.com/github/markup/pull/1041)
+
+## 1.5.0 - 2017-03-27
+
+### Added
+
+* Re-introduce [#537](https://github.com/github/markup/pull/537) to detect language of markup document  
+  However `github-linguist` is optional and this gem will fallback to extensions for detection.  
+
+[Full changelog](https://github.com/github/markup/compare/v1.4.9...v1.5.0)
+
+## 1.4.9 - 2017-03-27
+
+### Changed
+
+* Reverted [#537](https://github.com/github/markup/pull/537) to avoid extra dependencies
+
+[Full changelog](https://github.com/github/markup/compare/v1.4.8...v1.4.9)
+
+## 1.3.3 (2015-02-17)
+
+* Address a slight typo with `POSIX` [#456](https://github.com/github/markup/pull/456)
+
+[Full changelog](https://github.com/github/markup/compare/v1.3.2...v1.3.3)
+
+## 1.3.2 (2015-02-17)
+
+* RST: Output code instead of tt for inline literals [#370](https://github.com/github/markup/pull/370)
+* RST: Add IDs to headers so that `.. contents` works with `.. sectnum` [#391](https://github.com/github/markup/pull/391)
+
+[Full changelog](https://github.com/github/markup/compare/v1.3.1...v1.3.2)
+
+## 1.3.1 (2014-11-13)
+
+* Fix name error when trying to use newer versions of RedCarpet [#387](https://github.com/github/markup/pull/387)
+
+[Full changelog](https://github.com/github/markup/compare/v1.3.0...v1.3.1)
+
+## 1.3.0 (2014-09-11)
+
+* Extend the field limit for tables to 50 characters for RST [#306](https://github.com/github/markup/pull/306)
+* Add `.mkdn` as a supported markdown extension [#308](https://github.com/github/markup/pull/308)
+* Upgrade wikicloth to 0.8.1 [#317](https://github.com/github/markup/pull/317)
+* Force encoding of posix-spawn output [#338](https://github.com/github/markup/pull/338)
+* Add `.rmd` as a supported markdown extension [#343](https://github.com/github/markup/pull/343)
+
+[Full changelog](https://github.com/github/markup/compare/v1.2.1...v1.3.0)
+
+## 1.2.1 (2014-04-23)
+
+* Disable RST warnings [#290](https://github.com/github/markup/pull/290)
+
+[Full changelog](https://github.com/github/markup/compare/v1.2.0...v1.2.1)
+
+## 1.1.1 (2014-04-03)
+
+* Upgrade to org-ruby 0.9.1
+* Set default encoding to UTF-8 for Python 2
+
+## 1.1.0 (2014-03-10)
+
+* Raise GitHub::Markup::CommandError if external command exits with a non-zero status.
+* Remove support for literate Haskell (see #266)
+
 ## 0.5.1 (2010-09-30)
 
 * Support relative path links in rdoc
